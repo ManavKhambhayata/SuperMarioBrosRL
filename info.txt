@@ -1,0 +1,4 @@
+1) super mario bros open ai gym pypi
+
+2) nes py library - for python to be able to actually play super mario bros 
+reference site:- https://pypi.org/project/gym-super-mario-bros/

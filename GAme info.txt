@@ -1,0 +1,27 @@
+we need to preprocess the game date before we use reinforcement learning, 
+there are mainly 2 preprocesing steps:-
+1) Greyscaling 
+2) framestacking (screen shot taken)
+as the color image has three times the many pixels to process and converting them into greyscale cuts down the data it needs to learn from 
+framestacking helps our AI have context by stacking consecutive frames we are giving our AI model memory, it will be able to see mario and 
+its enemy's movements
+
+before preprocessing :-
+Libraries to install :-
+	pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio===0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+error while executing greyscale:-
+**kwargs)
+    377 def reset(self, **kwargs):
+    378     &quot;&quot;&quot;Resets the environment, returning a modified observation using :meth:`self.observation`.&quot;&quot;&quot;
+--&gt; 379     obs, info = self.env.reset(**kwargs)
+    380     return self.observation(obs), info
+    ValueError: too many values to unpack (expected 2),
+
+Solution:- 
+change core.py file lines with :- 
+ def reset(self, **kwargs):
+        """Resets the environment, returning a modified observation using :meth:`self.observation`."""
+        obs= self.env.reset(**kwargs)
+        return self.observation(obs)
+
