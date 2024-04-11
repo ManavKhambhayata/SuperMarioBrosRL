@@ -1,5 +1,5 @@
 # Reinforcement Learning for Super Mario Bros.
-![Mario](https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png)
+![Mario](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/MarioNSMBUDeluxe.png/120px-MarioNSMBUDeluxe.png)
 
 Welcome to the repository for Reinforcement Learning applied to mastering "Super Mario Bros." 🍄🎮
 
